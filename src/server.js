@@ -23,7 +23,7 @@ nunjucks.configure("src/views", {
 // req: requisição
 // res: resposta
 server.get("/", (req, res) => {
-  return res.render("index.html", { title: "LixoNoLixo" });
+  return res.render("index.html", { title: "Ecoleta" });
 });
 
 server.get("/create-point", (req, res) => {
@@ -100,5 +100,9 @@ server.get("/search-results", (req, res) => {
   });
 });
 
+let port = process.env.PORT || 8080;
+
 //ligar o servidor
-server.listen(3000);
+server.listen(port);
+
+
