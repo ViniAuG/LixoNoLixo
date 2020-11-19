@@ -1,4 +1,5 @@
 // selecionar os estados e as cidades do form
+// qualquer coisa pra commitar
 
 function getEstados() {
   const ufselect = document.querySelector("select[name=uf]");
