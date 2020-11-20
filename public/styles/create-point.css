@@ -5,12 +5,25 @@
   margin: 0 auto;
 }
 
-#page-create-point header {
-  margin-top: 30px;
+@media (min-width: 900px) {
+  #page-create-point header {
+    margin-top: 30px;
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (max-width: 900px) {
+  #page-create-point header {
+    margin-top: 20px;
+    margin-left: 25%;
+
+    display: row;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 #page-create-point header a {

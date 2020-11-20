@@ -18,11 +18,25 @@ body::after {
   margin: 0 auto;
 }
 
-#page-search-results header {
-  margin-top: 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+@media (min-width: 900px) {
+  #page-search-results header {
+    margin-top: 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (max-width: 900px) {
+  #page-search-results header {
+    margin-top: 20px;
+    margin-left: 25%;
+
+    display: row;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 #page-search-results header a {
