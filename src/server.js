@@ -100,5 +100,7 @@ server.get("/search-results", (req, res) => {
   });
 });
 
+let port = process.env.PORT || 8080;
+
 //ligar o servidor
-server.listen(3000);
+server.listen(port);
