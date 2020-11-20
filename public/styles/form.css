@@ -8,6 +8,12 @@
   flex-direction: column;
 }
 
+@media (max-width: 900px) {
+  #page-create-point form {
+    margin-top: 50px;
+  }
+}
+
 #page-create-point form h1 {
   font-size: 36px;
 }
@@ -24,6 +30,12 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 40px;
+}
+
+@media (max-width: 900px) {
+  #page-create-point form legend {
+    display: table-row;
+  }
 }
 
 #page-create-point form legend h2 {
@@ -109,6 +121,14 @@
   border: 0;
   transition: background-color 0.2s;
   cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  #page-create-point form button {
+    width: 100%;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
 }
 
 #page-create-point form button:hover {
