@@ -19,9 +19,12 @@
 }
 
 #page-create-point form fieldset {
-  margin-top: 64px;
   min-inline-size: auto;
   border: 0;
+}
+
+#page-create-point .margem-dados {
+  margin-top: 50px;
 }
 
 #page-create-point form legend {

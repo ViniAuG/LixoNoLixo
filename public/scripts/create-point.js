@@ -58,13 +58,13 @@ const collectedItems = document.querySelector("input[name=items]");
 let selectedItems = [];
 
 function handleSelectedItem(event) {
-  // console.log(event.target)
+  console.log(event)
   const itemLi = event.target;
 
   //adicionar ou remover usa o toggle() para uma class com js
   itemLi.classList.toggle("selected");
 
-  const itemId = eventLi.dataset.id;
+  const itemId = event.target.innerText;
 
   //verificar se existem itens selecionados
   //se sim, pegar os itens selecionados

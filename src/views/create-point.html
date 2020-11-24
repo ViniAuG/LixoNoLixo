@@ -30,21 +30,10 @@
       <form action="/savepoint" method="POST">
         <h1>Cadastro do ponto de coleta</h1>
 
-        <fieldset>
+        <fieldset class="margem-dados">
           <legend>
-            <h2>Dados da entidade</h2>
+            <h2>Dados de quem está cadastrando</h2>
           </legend>
-
-          <div class="field-group">
-            <div class="field">
-              <label for="name">Nome da entidade</label>
-              <input type="text" name="name" id="name" required />
-            </div>
-            <div class="field">
-              <label for="image">Imagem da entidade</label>
-              <input type="url" name="image" id="image" />
-            </div>
-          </div>
 
           <div class="field-group">
             <div class="field">
@@ -52,17 +41,24 @@
               <input type="email" name="email" id="email" />
             </div>
             <div class="field">
-              <label for="whatsapp">Whatsapp</label>
+              <label for="whatsapp">Celular</label>
               <input type="text" name="whatsapp" id="whatsapp" />
+            </div>
+          </div>
+          
+          <legend>
+            <h2>Dados do ponto</h2>
+          </legend>
+
+          <div class="field-group">
+            <div class="field">
+              <label for="name">Nome do ponto</label>
+              <input type="text" name="name" id="name" required />
             </div>
           </div>
         </fieldset>
 
         <fieldset>
-          <legend>
-            <h2>Endereço</h2>
-          </legend>
-
           <div class="field-group">
             <div class="field">
               <label for="address">Endereço</label>
@@ -98,7 +94,7 @@
           </legend>
 
           <div class="items-grid">
-            <li data-id="1" class="selected">
+            <li data-id="1">
               <img src="assets/icones/lampadas.svg" alt="Lâmpadas" />
               <span>Lâmpadas</span>
             </li>
